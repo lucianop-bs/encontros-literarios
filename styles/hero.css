@@ -1,0 +1,14 @@
+#hero {
+  width: 100%;
+  padding: 3.5rem 10rem 0;
+  & nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & img[src*="logo"] {
+    width: 10rem;
+    height: 2.5rem;
+  }
+}
