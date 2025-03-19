@@ -1,4 +1,4 @@
-#hero {
+.hero {
   width: 100%;
   height: 59.25rem;
   background-image: url(../assets/hero-background.png);
@@ -6,6 +6,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  animation: entrada-hero 2s ease-in both;
 
   & nav {
     display: flex;
@@ -38,12 +40,24 @@
       font: var(--body-lg-R);
       color: var(--text-body);
       text-align: center;
+      opacity: 0;
+      animation: entrada-hero 2s ease-in both;
+      animation-delay: 0.1s;
     }
   }
 }
 
+@keyframes entrada-hero {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (width <= 37rem) {
-  #hero {
+  .hero {
     padding: 1.25rem;
     height: 29rem;
 
