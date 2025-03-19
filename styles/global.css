@@ -39,7 +39,7 @@
   --body-md: 700 1rem/1.4 var(--ff);
   --body-md-R: 400 1rem/1.4 var(--ff);
   --body-sm: 700 0.875rem/1.4 var(--ff);
-  --body-sm-R: 700 0.875rem/1.4 var(--ff);
+  --body-sm-R: 400 0.875rem/1.4 var(--ff);
   --body-xs: 700 0.75rem/1.4 var(--ff);
   --body-xs-R: 400 0.75rem/1.4 var(--ff);
 
@@ -54,4 +54,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font: var(--title-lg);
+  color: var(--text-body);
 }
