@@ -8,7 +8,6 @@
   background-repeat: no-repeat;
 
   animation: entrada-hero 2s ease-in both;
-
   & nav {
     display: flex;
     align-items: center;

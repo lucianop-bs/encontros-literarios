@@ -1,0 +1,139 @@
+.hero-animation {
+  width: 75rem;
+  height: auto;
+  padding: 6rem 7.5rem;
+  position: relative;
+  & img[src*="book"] {
+    width: 5.5rem;
+    height: 5.5rem;
+    transform: rotate(20.758deg);
+    position: absolute;
+    left: 55%;
+    bottom: 65%;
+    scale: 0;
+  }
+
+  & img[src*="ball"] {
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: rotate(-14.483deg);
+    position: absolute;
+    right: -10%;
+    top: 56%;
+    scale: 0;
+  }
+  & img[src*="ouija"] {
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: rotate(99.47deg);
+    position: absolute;
+    bottom: 32%;
+    left: 14%;
+    scale: 0;
+  }
+
+  & .img-1:hover {
+    transform: scale(1.3) rotate(30deg);
+  }
+  & .img-2:hover {
+    transform: scale(1.3) rotate(130deg);
+  }
+
+  & .text-contain {
+    width: 71rem;
+    height: auto;
+    margin: 7.125rem 2rem 9.875rem 2rem;
+    text-align: center;
+    position: relative;
+
+    & span {
+      font-family: Raleway;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 200%;
+      color: rgba(226, 231, 233, 0.5);
+    }
+    & strong {
+      font-family: Raleway;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 200%;
+      color: rgba(226, 231, 233, 0.5);
+    }
+  }
+  &:hover {
+    & img[src*="book"] {
+      animation: image-fade-in 0.2s ease-in forwards;
+    }
+    & img[src*="ball"] {
+      animation: image-fade-in 0.2s ease-in forwards;
+      animation-delay: 1.6s;
+    }
+    & img[src*="ouija"] {
+      animation: image-fade-in 0.2s ease-in forwards;
+      animation-delay: 0.8s;
+    }
+
+    & .text-contain {
+      & :nth-child(1) {
+        color: rgba(226, 231, 233, 0.5);
+        animation: text-fade-in 0.8s ease both;
+      }
+      & :nth-child(2) {
+        color: rgba(226, 231, 233, 0.5);
+        animation: text-fade-in2 0.8s ease both;
+      }
+      & :nth-child(3) {
+        color: rgba(226, 231, 233, 0.5);
+        animation: text-fade-in 0.8s ease both;
+        animation-delay: 0.8s;
+      }
+      & :nth-child(4) {
+        color: rgba(226, 231, 233, 0.5);
+        animation: text-fade-in2 0.8s ease both;
+        animation-delay: 0.8s;
+      }
+      & :nth-child(5) {
+        color: rgba(226, 231, 233, 0.5);
+        animation: text-fade-in 0.8s ease both;
+        animation-delay: 1.6s;
+      }
+      & :nth-child(6) {
+        color: rgba(226, 231, 233, 0.5);
+        animation: text-fade-in2 0.8s ease both;
+        animation-delay: 1.6s;
+      }
+    }
+  }
+}
+@keyframes image-fade-in {
+  from {
+    scale: 0;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes text-fade-in {
+  from {
+    color: rgba(226, 231, 233, 0.5);
+  }
+
+  to {
+    color: var(--text-body);
+  }
+}
+
+@keyframes text-fade-in2 {
+  from {
+    color: rgba(226, 231, 233, 0.5);
+  }
+
+  to {
+    color: var(--blue-light);
+  }
+}
