@@ -1,15 +1,19 @@
 .hero-animation {
-  width: 75rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: auto;
   padding: 6rem 7.5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   position: relative;
+
   & img[src*="book"] {
     width: 5.5rem;
     height: 5.5rem;
     transform: rotate(20.758deg);
-    position: absolute;
-    left: 55%;
-    bottom: 65%;
+
     scale: 0;
   }
 
@@ -17,18 +21,14 @@
     width: 4.5rem;
     height: 4.5rem;
     transform: rotate(-14.483deg);
-    position: absolute;
-    right: -10%;
-    top: 56%;
+
     scale: 0;
   }
   & img[src*="ouija"] {
     width: 4.5rem;
     height: 4.5rem;
     transform: rotate(99.47deg);
-    position: absolute;
-    bottom: 32%;
-    left: 14%;
+
     scale: 0;
   }
 
@@ -40,11 +40,11 @@
   }
 
   & .text-contain {
-    width: 71rem;
-    height: auto;
-    margin: 7.125rem 2rem 9.875rem 2rem;
+    width: 100%;
+    height: 8rem;
     text-align: center;
     position: relative;
+    /* flex-wrap: wrap; */
 
     & span {
       font-family: Raleway;

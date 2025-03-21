@@ -33,3 +33,9 @@
 .display-on {
   display: none;
 }
+
+.centerimg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
