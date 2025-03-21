@@ -3,6 +3,7 @@
   height: 59.25rem;
   background-image: url(../assets/hero-background.png);
   padding: 3.5rem 10rem 0;
+  margin-bottom: 6rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,7 +60,7 @@
   .hero {
     padding: 1.25rem;
     height: 29rem;
-
+    margin-bottom: 2rem;
     & img[src*="symbol"] {
       display: initial;
     }

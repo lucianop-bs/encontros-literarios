@@ -1,9 +1,10 @@
 .hero-animation {
   display: flex;
   justify-content: center;
+  max-width: 1440px;
   width: 100%;
-  height: auto;
-  padding: 6rem 7.5rem;
+  padding: 6rem 7.5rem 0 7.5rem;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -40,11 +41,13 @@
   }
 
   & .text-contain {
+    display: inline;
+
     width: 100%;
     height: 8rem;
+    height: 100%;
     text-align: center;
     position: relative;
-    /* flex-wrap: wrap; */
 
     & span {
       font-family: Raleway;
@@ -135,5 +138,76 @@
 
   to {
     color: var(--blue-light);
+  }
+}
+
+@media (width <= 37rem) {
+  .hero-animation {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    width: 100%;
+    padding: 2rem 1.25rem 0 1.25rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 4rem;
+
+    & img[src*="book"] {
+      width: 2.5rem;
+      height: 2.5rem;
+      transform: rotate(20.758deg);
+      position: absolute;
+      bottom: 80%;
+      left: 65%;
+      scale: 0;
+    }
+
+    & img[src*="ball"] {
+      width: 2.5rem;
+      height: 2.5rem;
+      transform: rotate(15deg);
+      position: absolute;
+      left: 80%;
+      top: 95%;
+
+      scale: 0;
+    }
+    & img[src*="ouija"] {
+      width: 2rem;
+      height: 2rem;
+      transform: rotate(-30deg);
+      position: absolute;
+      top: 90%;
+      left: 7%;
+      scale: 0;
+    }
+
+    & .text-contain {
+      width: 100%;
+      height: 5.5rem;
+      height: 100%;
+      text-align: center;
+      position: relative;
+
+      & span {
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        color: rgba(226, 231, 233, 0.5);
+      }
+      & strong {
+        font-family: Raleway;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        color: rgba(226, 231, 233, 0.5);
+      }
+    }
   }
 }
