@@ -147,14 +147,14 @@
     justify-content: center;
     max-width: 1440px;
     width: 100%;
-    height: 251px;
+    height: auto;
     padding: 2rem 1.25rem 0rem 1.25rem;
+    margin-top: 10rem;
 
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: absolute;
-    margin-top: 4rem;
+    position: relative;
 
     & img[src*="book"] {
       width: 2.5rem;
@@ -162,7 +162,7 @@
       transform: rotate(20.758deg);
       position: absolute;
       bottom: 87%;
-      left: 65%;
+      left: 67%;
       scale: 0;
     }
 
@@ -171,8 +171,8 @@
       height: 2.5rem;
       transform: rotate(15deg);
       position: absolute;
-      left: 80%;
-      top: 45%;
+      left: 88%;
+      top: 85%;
 
       scale: 0;
     }
@@ -181,7 +181,7 @@
       height: 2rem;
       transform: rotate(-30deg);
       position: absolute;
-      top: 43%;
+      top: 89%;
       left: 8%;
       scale: 0;
     }

@@ -1,0 +1,266 @@
+.livro-title {
+  display: flex;
+  margin-top: 15rem;
+  margin-bottom: 5.5rem;
+  justify-content: center;
+  gap: 1rem;
+  & img[src*="star"] {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--pink-dark);
+  }
+  & .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & p {
+      font: var(--title-sm);
+      color: var(--text-title);
+    }
+    & span {
+      color: var(--text-body);
+      font: var(--body-md-R);
+      margin-top: 5px;
+    }
+  }
+}
+.livro-animation {
+  & .book-capa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & img[src*="book-capa"] {
+      width: 30rem;
+      height: 39rem;
+    }
+  }
+  & .book-contain {
+    position: absolute;
+    z-index: -1;
+    bottom: 90%;
+    left: 45%;
+
+    & img[src*="yellow"] {
+      width: 10.75rem;
+      height: 33.5rem;
+      position: absolute;
+    }
+    & img[src*="purple"] {
+      width: 10.75rem;
+      height: 33.5rem;
+      position: absolute;
+    }
+    & img[src*="pin"] {
+      width: 13.875rem;
+      height: 15.875rem;
+      position: absolute;
+    }
+    & img[src*="capa"] {
+      width: 10.875rem;
+      height: 1.875rem;
+      position: absolute;
+    }
+    & img[src*="exclusivo"] {
+      width: 6.55rem;
+      height: 7.93rem;
+      position: absolute;
+    }
+
+    & img[src*="marca"] {
+      width: 9rem;
+      height: 9.5rem;
+      position: absolute;
+    }
+  }
+
+  &:hover {
+    & img[src*="yellow"] {
+      width: 10.75rem;
+      height: 33.5rem;
+      position: absolute;
+      transform: translatex(146%) translateY(-30%) rotate(12deg);
+      transition: 200ms ease-in-out;
+    }
+    & img[src*="purple"] {
+      width: 10.75rem;
+      height: 33.5rem;
+      position: absolute;
+      transform: translatex(205%) translateY(-10%) rotate(22deg);
+      transition: 200ms ease-in-out;
+    }
+    & img[src*="marca"] {
+      width: 9rem;
+      height: 9.5rem;
+      position: absolute;
+      transform: translatex(205%) translateY(290%);
+      transition: 200ms ease-in-out;
+    }
+    & img[src*="pin"] {
+      width: 13.875rem;
+      height: 15.875rem;
+      position: absolute;
+      transform: translatex(-138%) translateY(150%) rotate(-8deg);
+      transition: 200ms ease-in-out;
+    }
+    & img[src*="exclusivo"] {
+      width: 6.55rem;
+      height: 7.93rem;
+      position: absolute;
+      transform: translatex(-320%) translateY(236%);
+      transition: 200ms ease-in-out;
+    }
+    & img[src*="capa-arrow"] {
+      width: 9rem;
+      height: 9.5rem;
+      position: absolute;
+      transform: translatex(-190%) translateY(-98%);
+      transition: 200ms ease-in-out;
+    }
+
+    & .book-contain {
+      animation: pulinho 1s ease both;
+      animation-delay: 200ms;
+    }
+  }
+}
+@keyframes pulinho {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (width <= 37rem) {
+  .livro-title {
+    
+    margin-top: 6.5rem;
+    margin-bottom: 4rem;
+    
+    gap: 0.75rem;
+    & img[src*="star"] {
+      width: 1.25rem;
+      height: 1.25rem;
+      fill: var(--pink-dark);
+    }
+    & .title {
+
+      & p {
+        font-family: Raleway;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      & span {
+        color: var(--text-body);
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+  }
+  .livro-animation {
+    & .book-capa {
+
+      & img[src*="book-capa"] {
+        width: 157.189px;
+        height: 207.677px;
+      }
+    }
+    & .book-contain {
+
+      & img[src*="yellow"] {
+        width: 58.399px;
+        height: 180.918px;
+        transform: rotate(11.717deg);
+        position: absolute;
+      }
+      & img[src*="purple"] {
+        width: 57.894px;
+        height: 180.413px;
+        transform: rotate(22.093deg);
+        position: absolute;
+      }
+      & img[src*="pin"] {
+        width: 74.887px;
+        height: 85.405px;
+        transform: rotate(-7.548deg);
+        position: absolute;
+      }
+      & img[src*="capa-arrow"] {
+        width: 58.735px;
+        height: 10.098px;
+        position: absolute;
+      }
+      & img[src*="exclusivo"] {
+        width: 35.292px;
+        height: 42.747px;
+        position: absolute;
+      }
+
+      & img[src*="marca"] {
+        width: 48.958px;
+        height: 50.994px;
+        position: absolute;
+      }
+    }
+
+    &:hover {
+      & img[src*="yellow"] {
+        width: 58.399px;
+        height: 180.918px;
+        position: absolute;
+        transform: translatex(146%) translateY(-30%) rotate(12deg);
+        transition: 200ms ease-in-out;
+      }
+      & img[src*="purple"] {
+        width: 57.894px;
+        height: 180.413px;
+        position: absolute;
+        transform: translatex(205%) translateY(-10%) rotate(22deg);
+        transition: 200ms ease-in-out;
+      }
+      & img[src*="marca"] {
+        width: 48.958px;
+        height: 50.994px;
+        position: absolute;
+        transform: translatex(205%) translateY(290%);
+        transition: 200ms ease-in-out;
+      }
+      & img[src*="pin"] {
+        width: 74.887px;
+        height: 85.405px;
+        position: absolute;
+        transform: translatex(-138%) translateY(150%);
+        transition: 200ms ease-in-out;
+      }
+      & img[src*="exclusivo"] {
+        width: 35.292px;
+        height: 42.747px;
+        position: absolute;
+        transform: translatex(-320%) translateY(236%);
+        transition: 200ms ease-in-out;
+      }
+      & img[src*="capa-arrow"] {
+        width: 58.735px;
+        height: 10.098px;
+        position: absolute;
+        transform: translatex(-190%) translateY(-98%);
+        transition: 200ms ease-in-out;
+      }
+
+ 
+  }
+}
+}
