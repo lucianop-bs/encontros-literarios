@@ -44,3 +44,51 @@
   align-items: center;
   justify-content: center;
 }
+
+.tag {
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: var(--text-body);
+  background-color: var(--shape-stroke);
+  padding: 0.56rem 1.25rem;
+  border-radius: 999px;
+}
+
+.button-price {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  background-color: var(--pink-dark);
+  padding: 0 1.25rem;
+  border-radius: 0.5rem;
+  font: var(--button);
+  color: var(--text-title);
+  overflow: hidden;
+}
+
+.button-price::before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--text-body);
+  opacity: 0.2;
+
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  top: 50%;
+  left: 50%;
+
+  transition: transform 0.3s ease-out;
+}
+
+.button-price:hover::before {
+  transform: translate(-50%, -50%) scale(10);
+}
