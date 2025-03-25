@@ -1,3 +1,23 @@
+.price-title {
+  & p {
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--text-title);
+    text-align: center;
+  }
+}
+
+.price-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90rem;
+  height: 77.5rem;
+}
+
 .pricing {
   display: flex;
   width: 18rem;
@@ -9,7 +29,7 @@
   border-radius: 1.5rem;
 }
 .pricing-contain {
-  & .semestral {
+  & .time {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +38,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: var(--pink-light);
   }
 
   & h2 {
@@ -64,9 +83,120 @@
     font-weight: 400;
     line-height: 140%;
     color: var(--text-body);
+    display: flex;
+    gap: 0.5rem;
   }
   & img {
     width: 14.061px;
     height: 14.073px;
+  }
+}
+.anual {
+  position: relative;
+  border: 1px solid var(--shape-stroke);
+  background: var(--shape-base);
+  transform: rotate(8deg);
+  z-index: 0;
+  transition: z-index 0s;
+
+  &:hover {
+    background-color: var(--shape-hover);
+    animation: anual 0.5s ease both;
+
+    z-index: 10;
+
+    .star3,
+    .star4 {
+      transform: rotate(8deg);
+    }
+  }
+  &:not(:hover) {
+    animation: voltar-anual 0.5s ease both;
+  }
+}
+.mensal {
+  position: relative;
+  border: 1px solid var(--shape-stroke);
+  background: var(--shape-base);
+  transform: rotate(-8deg);
+  z-index: 1;
+  transition: z-index 0s;
+
+  &:hover {
+    background-color: var(--shape-hover);
+    animation: mensal 0.5s ease both;
+
+    z-index: 10;
+
+    .star1,
+    .star2 {
+      transform: rotate(8deg);
+    }
+  }
+  &:not(:hover) {
+    animation: voltar-mensal 0.5s ease both;
+  }
+}
+.semestral {
+  top: -5%;
+  z-index: 1;
+  position: relative;
+
+  &:hover {
+    animation: mover 0.5s ease both;
+  }
+
+  &:not(:hover) {
+    animation: voltar 0.5s ease both;
+  }
+}
+
+@keyframes mover {
+  from {
+    transform: translateY(0x);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@keyframes voltar {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mensal {
+  from {
+    transform: rotate(-8deg);
+  }
+  to {
+    transform: translateY(-10px) rotate(-8deg);
+  }
+}
+@keyframes voltar-mensal {
+  from {
+    transform: translateY(-10px) rotate(-8deg);
+  }
+  to {
+    transform: rotate(-8deg);
+  }
+}
+@keyframes anual {
+  from {
+    transform: rotate(8deg);
+  }
+  to {
+    transform: translateY(-10px) rotate(8deg);
+  }
+}
+@keyframes voltar-anual {
+  from {
+    transform: translateY(-10px) rotate(8deg);
+  }
+  to {
+    transform: rotate(8deg);
   }
 }

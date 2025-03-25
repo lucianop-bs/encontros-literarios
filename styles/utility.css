@@ -92,3 +92,54 @@
 .button-price:hover::before {
   transform: translate(-50%, -50%) scale(10);
 }
+
+.button-color {
+  background-color: var(--blue-dark);
+}
+.color-text {
+  color: var(--blue-light);
+}
+.color-pink {
+  color: var(--pink-light);
+}
+
+.star1 {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: -10%;
+  top: -10%;
+}
+
+.star2 {
+  width: 13.055px;
+  height: 13.055px;
+  position: absolute;
+  left: -15%;
+  top: -1%;
+}
+
+.coelho {
+  position: absolute;
+  left: 32px;
+
+  top: -50.189px;
+}
+
+.star3 {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  bottom: -5%;
+  left: 106%;
+  transform: rotate(-8deg);
+}
+
+.star4 {
+  width: 11.25px;
+  height: 11.25px;
+  transform: rotate(-8deg);
+  position: absolute;
+  bottom: -7%;
+  left: 100%;
+}
