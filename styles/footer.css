@@ -1,9 +1,9 @@
 footer {
   width: 100%;
   height: 415px;
-  max-width: 90rem;
+  max-width: 100%;
   background-image: url(../assets/book-trace-background.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   display: flex;
   align-items: center;
@@ -93,5 +93,22 @@ footer {
         color: var(--text-body);
       }
     }
+  }
+}
+
+@media (width <= 37rem) {
+  footer {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-image: url(../assets/book-trace-background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    white-space: nowrap;
   }
 }
