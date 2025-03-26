@@ -9,6 +9,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 10rem;
+  margin-top: 7rem;
 
   & .logo-footer {
     & img {

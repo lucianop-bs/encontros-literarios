@@ -143,3 +143,13 @@
   bottom: -7%;
   left: 100%;
 }
+
+@media (width <= 37rem) {
+  .star1,
+  .coelho,
+  .star2,
+  .star3,
+  .star4 {
+    display: none;
+  }
+}

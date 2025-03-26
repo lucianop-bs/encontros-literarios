@@ -200,3 +200,15 @@
     transform: rotate(8deg);
   }
 }
+@media (width<=37rem) {
+  .price-area {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    pointer-events: none;
+    margin-top: 7rem;
+  }
+  .semestral {
+    top: 0%;
+  }
+}
